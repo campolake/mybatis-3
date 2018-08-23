@@ -23,6 +23,10 @@ import org.apache.ibatis.parsing.XNode;
 import org.apache.ibatis.scripting.defaults.DefaultParameterHandler;
 import org.apache.ibatis.session.Configuration;
 
+
+/**
+ * 脚本语言驱动
+ */
 public interface LanguageDriver {
 
   /**

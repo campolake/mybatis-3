@@ -306,6 +306,7 @@ public class MapperAnnotationBuilder {
       KeyGenerator keyGenerator;
       String keyProperty = null;
       String keyColumn = null;
+      //如果不是select
       if (SqlCommandType.INSERT.equals(sqlCommandType) || SqlCommandType.UPDATE.equals(sqlCommandType)) {
         // first check for SelectKey annotation - that overrides everything else
         SelectKey selectKey = method.getAnnotation(SelectKey.class);
